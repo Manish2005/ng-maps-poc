@@ -1,0 +1,12 @@
+<div>
+  <ol>
+    <div *ngFor="let item of locations">
+      <li>{{item.formatted_address}}</li>
+
+    </div>
+  </ol>
+</div>
+
+<div style="border:1px solid #999;">
+  <div class="map" #map></div>
+</div>

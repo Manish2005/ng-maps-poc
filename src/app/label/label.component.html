@@ -1,0 +1,8 @@
+<label>
+  <span class="control-label">
+    <ng-content></ng-content>
+  </span>
+  <span *ngIf="(control.dirty || control.touched) && !control.valid" class="btn btn-link" [ngbTooltip]="getMessages()" style="color:#ff0000;padding:0 5px;;">
+    <i class="fa fa-exclamation-circle" style="float:right;" aria-hidden="true"></i>
+  </span>
+</label>
